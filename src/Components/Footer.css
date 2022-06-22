@@ -1,0 +1,44 @@
+.Footer {
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(17, 167, 187, 1);
+    padding-bottom: 5vw;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+}
+
+.Media-Icons {
+    padding-top: 3vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.Contact-Address {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:white;
+    margin-top: 4vh;
+    font-size: 35px;
+}
+
+.Contact-Address p {
+    margin-top: 10px;
+}
+
+#Address {
+    margin-top: 40px;
+}
+
+.Map-Container {
+    align-self: center;
+    margin-top: 15vh;
+    padding-bottom: 12vh;
+}
+
+.Map {
+    width: 47vw;
+    height: 47vw;
+    transform: scale(2);   
+}

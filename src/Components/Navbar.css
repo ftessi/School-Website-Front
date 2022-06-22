@@ -1,0 +1,54 @@
+.Navbar {
+    background-color: rgba(6, 51, 64, 0.7);
+    border-radius: 0 0 4vw 4vw;
+    width: 100%;
+    position:fixed;
+    z-index: 3;
+}
+
+.Navbar-Buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 3vw;
+    margin-right: 3vw;
+}
+
+.Button {
+    flex-direction: column;
+    padding: 1vmin !important;
+}
+
+.Button p{
+    color: white !important;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 400;
+    font-size: 2.5vmin;
+    margin: 0;
+}
+.Icon {
+    fill: white;
+    width: 7vmin;
+    max-height: 4vh;
+}
+
+.Navbar-Logo {
+    display: flex;
+    justify-content: center;
+    width: 15vh;
+}
+
+.Logo {
+    position: fixed;
+    transition-duration: 1s;
+    top: 20vh;
+    width: 30vmin;
+}
+
+@media only screen and (min-width: 992px) {
+    .Navbar {
+        border-radius: 0 0 2vw 2vw;
+    }
+    .Button {
+        flex-direction: row;
+    }
+}

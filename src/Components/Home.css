@@ -1,0 +1,18 @@
+.Home {
+    height: fit-content;
+    scroll-behavior: smooth !important;
+}
+
+.Intro-Text {
+    color: white;
+    text-align: center;
+    font-size: 35px;
+    font-family: Montserrat;
+    font-weight: 600;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 7vh;
+    background-color: rgba(6, 51, 64, 1);
+}

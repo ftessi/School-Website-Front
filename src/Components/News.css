@@ -1,0 +1,89 @@
+.News {
+    background-color: rgba(17, 167, 187, 1);
+    border-radius: 40px;
+    padding-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    margin-top: 200px;
+}
+
+.News-Header {
+    font-family: Montserrat;
+    font-size: 100px;
+    text-align: center;
+    color: white;
+    font-weight: 700;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.Publications-Container {
+    background-color: lightblue;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    padding-top: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.Publication-Small {
+    background-color: white !important;
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px !important;
+    border-radius: 20px !important;
+    height: 35vw;
+    width: 100%;
+    padding: 0 !important;
+}
+
+.Publication-Image-Small {
+    width: 40%;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    border-radius: 50px
+}
+.Publication-Image-Small img {
+    margin: 0;
+}
+
+.Publication-Body-Small {
+    background-color: lightcyan;
+    text-align: center;
+    width: 60%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.Publication-Body-Small h5 {
+    font-family: Montserrat;
+    font-size: 5vw;
+    margin: 0;
+    padding: 5px;
+}
+
+.Publication-Body-Small p {
+    font-family: Montserrat;
+    font-size: 3vw;
+    color: black;
+    font-weight: 900;
+    margin: 0;
+    width: fit-content;
+    padding: 5px;
+}
+
+.Publication-ViewAll {
+    font-family: Montserrat !important;
+    font-size: 40px !important;
+    width: 90%;
+    height: 120px;
+    align-self: center;
+    margin-top: 30px !important;
+    margin-bottom: 30px !important;
+    border-radius: 15px !important;
+    background-color: lightcyan !important;
+    font-weight: 700 !important;
+    color: rgba(6, 51, 64, 1) !important;
+}

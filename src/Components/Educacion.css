@@ -1,0 +1,70 @@
+.Education {
+    background-color: rgba(17, 167, 187, 1);
+    border-radius: 40px;
+    margin-bottom: 100px;
+    margin-top: 200px;
+}
+
+.EducationH {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 100px;
+    padding-top: 50px;
+    color: white;
+    text-align: center;
+}
+
+.Container-Buttons {
+    border-radius: 40px;
+    background-color: black;
+}
+
+#Button-Start {
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    margin-bottom: 2px;
+}
+
+#Button-Start img {
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+}
+
+#Button-End {
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    margin-top: 2px;
+}
+
+#Button-End img {
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+.Education-Button {
+    background-color: transparent !important;
+    display:grid !important;
+    columns: 1;
+    padding: 0 !important;
+    border-radius: 0 !important;
+}
+
+.Education-Button img {
+    display: block;
+    grid-column: 1;
+    grid-row: 1;
+    width: 100%;
+    object-fit: cover;
+    opacity: 0.6;
+}
+
+.Education-Button h1 {
+    grid-column: 1;
+    width: 100%;
+    grid-row: 1;
+    color: white;
+    font-size: 100px;
+    font-family: Montserrat;
+    z-index: 2;
+}
+
