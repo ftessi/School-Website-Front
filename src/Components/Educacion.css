@@ -1,0 +1,93 @@
+.Education {
+    padding-top: 80px;
+    text-align: center;
+    padding-bottom: 60px;
+    font-family: 'Montserrat', sans-serif; 
+}
+
+#Educacion {
+    position: relative;
+    top: -60px;
+    visibility: hidden;
+}
+
+.Education h1 {
+    letter-spacing: 0px;
+    margin: 0px;
+    color: #332587;
+    font-weight: 800;
+}
+
+.Education h4 {
+    margin: 30px;
+}
+
+.Button-Container {
+    background-color:rgba(224, 221, 221, 0.267);
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    box-shadow: -10px -10px 10px rgba(184, 184, 184, 0.568);
+}
+.Button-Container h2{
+    color:rgb(4, 87, 4);
+    font-weight: 700;
+    font-size: 50px;
+    margin-top: 20px;
+
+}
+
+.Container-Buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.Education-Button {
+    font-size: 25px;
+    color: #0C9D4F;
+    margin-top: 20px;
+}
+
+.Education-Button img {
+    max-width: 100%;
+}
+.Button-Container h2 {
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.Education-Button:hover {
+    color: #220c9d;
+  
+}
+@media(max-width:992px) {
+    .Button-Container h2{
+        color:rgb(4, 87, 4);
+        font-weight: 700;
+        font-size: 35px;
+        margin-top: 20px;
+    
+    }
+    .Container-Buttons{
+        justify-content: center !important;
+
+    }
+    .Education-Button{
+        margin-bottom: 20px !important;
+    }
+
+    .Education-Button img {
+        max-width: 100%;
+    }
+    .Education-Button:hover {
+        color: #220c9d;
+    }
+    .Button-Container p{
+        font-size: 13px;
+    }
+
+}

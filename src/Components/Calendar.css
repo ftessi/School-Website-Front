@@ -1,0 +1,108 @@
+.Calendar {
+    width: 100%;
+    padding-top: 50px;
+    text-align: center;
+    padding-bottom: 60px;
+    font-family: 'Montserrat', sans-serif; 
+    box-shadow: 0px -10px 10px rgba(184, 184, 184, 0.116);
+}
+
+.Calendar-Header {
+    color: darkgreen;
+}
+
+.Calendar-Header h1{
+    font-size: 80px ;
+    color: #0C9D4F;
+    font-weight: bold;
+}
+
+.Calendar-Header h4{
+    color: #080808c9;
+    font-weight: 500;
+}
+
+
+
+.Calendar-Dates {
+    padding-top: 80px;
+    padding-bottom: 60px;
+    font-size: 10px;
+}
+
+.Date-Container h4 {
+    max-width: 10px;
+}
+
+
+.Date-Container {
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+}
+
+.Date {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    justify-content: center;
+    width: 130px;
+    height: 130px;
+    background-color: #0C9D4F;
+    border-radius: 15px;
+    box-shadow: -5px 5px 3px rgba(104, 103, 103, 0.178);
+}
+
+.Date-Container h4 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: rgb(63, 62, 62);
+    align-self: center;
+    max-width: 500px;
+    font-size: 2em !important;
+}
+
+
+@media(max-width:992px) {
+    .Calendar-Header h1 {
+        font-size: 45px;
+    }
+
+    .Calendar-Header h4 {
+        font-size: 14px !important;
+    }
+    
+    .Calendar-Header {
+        margin-bottom: 20px;
+    }
+
+    .Date {
+        width: 100px;
+        height: 100px;
+        margin-top: 10px;
+    }
+
+    .Date-Container:hover .Date{
+        transition: 1s;
+        color: green;
+        background-color: white;
+    }
+    .Date-Container h4 {
+        max-width: 200px;
+        margin-top: 20px;
+    }
+    .Date-Container h2 {
+        font-size: 30px;
+    }
+    .Calendar-Dates {
+        padding-top: 15px;
+    }
+    .Calendar-Dates h4{
+        font-size: 20px;
+    }
+    .Calendar-Dates h3{
+        font-size: 20px;
+    }
+}

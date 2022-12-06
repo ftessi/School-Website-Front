@@ -1,0 +1,62 @@
+.Footer {
+    background-color: #1a0f58;
+    text-align: center;
+    max-width: 100%;
+}
+
+.Footer-Container {
+    align-items: center;
+}
+
+.Media-Icon {
+    padding: 0;
+    margin: 30px;
+}
+
+.Icons-Container a:hover .Media-Icon{
+    transition: linear 1s;
+    color: black;
+}
+
+.Map-Container {
+    align-self: center;
+    height: 100%;
+    padding: 20px;
+}
+
+.Map {
+    justify-self: center;
+    width: 80%;
+    min-height: 500px;
+}
+
+.Contact-Address {
+    font-family: 'Montserrat', sans-serif; 
+    color: lightcyan;
+}
+
+.Contact-Address h4 {
+    padding: 10px;
+}
+.logButton{
+    text-decoration: none;
+    color: white;
+    font-family: "Montserrat";
+    font-size: 22px;
+    font-weight: 500;
+}
+.logButton:hover{
+    color:rgb(15, 139, 21);
+}
+
+@media(max-width:992px) {
+    .Map {
+        min-height: 50vh;
+    }
+    .Contact-Address h4 {
+        font-size: 12px;
+    }
+    .logButton{
+        font-size: 12px;
+    }
+}

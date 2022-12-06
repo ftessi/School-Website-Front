@@ -1,0 +1,41 @@
+.header {
+    margin-top: 20px;
+  }
+  
+.headerTitles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Lora", serif;
+    color: #444;
+}
+
+.headerTitleSm {
+    color: darkblue;
+    font-weight: 800;
+    font-size: 50px;
+}
+
+.headerTitleLg {
+    font-size: 30px;
+}
+
+.headerImg{
+    width: 100%;
+    height: 450px;
+    margin-top: 80px;
+    object-fit: cover;
+}
+
+@media(max-width:992px) {
+    .headerTitleSm {
+        margin-top: 15%;
+        color: darkblue;
+        font-weight: 800;
+        font-size: 40px;
+    }
+    .headerTitleLg {
+        top: 50%;
+        font-size: 15px;
+    }
+}

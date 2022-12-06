@@ -1,0 +1,116 @@
+.News {
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0px -10px 10px rgba(0, 0, 0, 0.055);
+    padding-bottom: 40px;
+}
+.Publication-1 { 
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 1 !important;
+    background-color: rgb(238, 247, 247);
+    box-shadow: -5px 5px 3px rgba(0, 0, 0, 0.267);
+    border-radius: 5px;
+}
+
+
+.Publication-Image {
+    width: 100%;
+    position: static;
+    object-fit: cover;
+}
+.Publication-Button {
+    width: 100%;
+    height: 100%;
+    justify-content: flex-start !important;
+    padding: 0 !important;
+}
+
+.News-Headers {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif; 
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.News-Headers h1 {
+    color: darkblue;
+    font-weight: 800;
+}
+
+.News-Anchor{
+    visibility: hidden;
+}
+
+.Publication-Body {
+    font-family: 'Montserrat', sans-serif; 
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: darkblue;
+    text-align:left;
+    padding: 15px;
+    max-width: 70vw;
+}
+
+.Publication-ViewAll {
+    margin-bottom: 40px !important;
+    margin-top: 40px !important;
+    background-color: rgb(0, 0, 255, 0.2) !important;
+    color: darkblue !important;
+    font-size: 1.5em !important;
+    font-family: 'Montserrat', sans-serif !important;
+    text-transform: none !important; 
+    width: 50% !important;
+    box-shadow: -5px 5px 3px rgb(0, 0, 0, 0.2);
+}
+.Publication-ViewAll:hover {
+    transition: 1s;
+    background-color: white !important;
+}
+
+@media(min-width:992px) {
+
+.Publications-Container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.Publication-1 {
+    max-width: 450px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.Publication-Image {
+    height: 300px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.Publication-Button {
+    flex-direction: column;
+}
+.News-Headers h4 {
+    display: none;
+}
+
+.Publication-ViewAll:hover {
+    transition: 1s;
+    background-color: white !important;
+}
+}
+
+@media(max-width:992px) {
+    .Publication-Body h4{
+        font-size: 3.5em;
+    }
+    
+    .Publication-Body h6{
+        font-size: 1.75em;
+    }
+    .Publication-ViewAll {
+        font-size: 17px !important;
+        width: 70% !important;
+    }
+    
+}
