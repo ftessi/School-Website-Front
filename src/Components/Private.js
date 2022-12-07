@@ -4,10 +4,9 @@ import axios from "axios";
 import jwt_decode from "jwt-decode";
 import { useEffect, useState } from "react";
 import Loading from "./Loading.js";
-import Admin from "../Admin/Home";
+import Home from "../Admin/Home";
 
 
-import { Route } from "react-router-dom";
 export default function Private() {
 
     const { user, refreshUser, logout } = useAuth();
@@ -50,8 +49,7 @@ export default function Private() {
     return (
         <>
             { user ? <>
-            <Admin />            
-            <Outlet/> 
+            <Home />
             </>
             : <Loading/>}
         </>

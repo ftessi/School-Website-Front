@@ -12,7 +12,7 @@ import Private from "./Components/Private.js"
 import AllPublicaciones from './Components/Publicaciones/AllPublicaciones'
 import AllDates from './Components/AllDates'
 import Login from './Components/Login'
-import NuevaPublicacion from './Components/NuevaPublicacion'
+import NuevaPublicacion from './Pages/NuevaPublicacion.js'
 // Bootstrap CSS
 import "bootstrap/dist/css/bootstrap.min.css";
 // Bootstrap Bundle JS

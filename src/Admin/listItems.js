@@ -6,6 +6,7 @@ import DashboardIcon from '@mui/icons-material/Dashboard';
 import PeopleIcon from '@mui/icons-material/People';
 import PostAddIcon from '@mui/icons-material/PostAdd';
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
+import { Link } from 'react-router-dom'
 
 export const mainListItems = (
   <React.Fragment>
@@ -15,17 +16,19 @@ export const mainListItems = (
       </ListItemIcon>
       <ListItemText primary="Inicio" />
     </ListItemButton>
+    
     <ListItemButton>
       <ListItemIcon>
         <PostAddIcon />
       </ListItemIcon>
       <ListItemText primary="Publicaciones" />
     </ListItemButton>
+    
     <ListItemButton>
       <ListItemIcon>
         <PeopleIcon />
       </ListItemIcon>
-      <ListItemText primary="Usuarios" />
+      <ListItemText primary="Usuarios"/>
     </ListItemButton>
     <ListItemButton>
       <ListItemIcon>

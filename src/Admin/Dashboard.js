@@ -23,6 +23,7 @@ import calendar from '../img/calendar.jpg';
 import user from "../img/userr.jpg";
 import post from "../img/post.jpg";
 import { mainListItems } from './listItems';
+import { Link as Linkk ,Outlet } from 'react-router-dom';
 
 function Copyright(props) {
   return (
@@ -172,6 +173,7 @@ function DashboardContent() {
                   }}
                 >
                   <Card sx={{ maxWidth: 600, height: 250}} className="card">
+                    <Linkk to="NuevaPublicacion">
                     <CardActionArea>
                       <CardMedia
                         sx={{opacity: 0.3}}
@@ -179,6 +181,7 @@ function DashboardContent() {
                         height="150"
                         src={post}
                         alt="Publicación"
+                        
                       />
                       <CardContent>
                         <Typography gutterBottom variant="h5" component="div">
@@ -189,7 +192,9 @@ function DashboardContent() {
                         </Typography>
                       </CardContent>
                     </CardActionArea>
+                    </Linkk>
                   </Card>
+
                   <Card sx={{maxWidth: 400, height: 250}}>
                     <CardActionArea>
                       <CardMedia
@@ -234,6 +239,7 @@ function DashboardContent() {
             </Grid>
             <Copyright sx={{ pt: 4 }} />
           </Container>
+        <Outlet/>
         </Box>
       </Box>
     </ThemeProvider>
