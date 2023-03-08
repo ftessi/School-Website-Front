@@ -23,14 +23,14 @@ import calendar from '../img/calendar.jpg';
 import user from "../img/userr.jpg";
 import post from "../img/post.jpg";
 import { mainListItems } from './listItems';
-import { Link as Linkk ,Outlet } from 'react-router-dom';
+import { Link as Linkk, Outlet } from 'react-router-dom';
 
 function Copyright(props) {
   return (
     <Typography variant="body2" color="text.secondary" align="center" {...props}>
       {'Copyright © '}
       <Link color="inherit" href="https://mui.com/">
-        Devs 
+        Devs
       </Link>{' '}
       {new Date().getFullYear()}
       {'.'}
@@ -142,7 +142,7 @@ function DashboardContent() {
           <List component="nav">
             {mainListItems}
             <Divider sx={{ my: 1 }} />
-            
+
           </List>
         </Drawer>
         <Box
@@ -158,47 +158,47 @@ function DashboardContent() {
           }}
         >
           <Toolbar />
-          <Container maxWidth="lg" sx={{ mt: 3, mb: 3 }}> 
+          <Container maxWidth="lg" sx={{ mt: 3, mb: 3 }}>
             <Grid container spacing={6}>
               <Grid item xs={12}>
                 <Paper
                   sx={{
                     p: 5,
-                    gap:3,
+                    gap: 3,
                     display: 'flex',
                     flexDirection: 'row',
                     flexWrap: 'wrap',
                     justifyContent: "center",
-                    alignItems:"center"
+                    alignItems: "center"
                   }}
                 >
-                  <Card sx={{ maxWidth: 600, height: 250}} className="card">
+                  <Card sx={{ maxWidth: 600, height: 250 }} className="card">
                     <Linkk to="NuevaPublicacion">
-                    <CardActionArea>
-                      <CardMedia
-                        sx={{opacity: 0.3}}
-                        component="img"
-                        height="150"
-                        src={post}
-                        alt="Publicación"
-                        
-                      />
-                      <CardContent>
-                        <Typography gutterBottom variant="h5" component="div">
-                          Nueva publicación
-                        </Typography>
-                        <Typography variant="body2" color="text.secondary">
-                          APRETÁ PARA AÑADIR
-                        </Typography>
-                      </CardContent>
-                    </CardActionArea>
+                      <CardActionArea>
+                        <CardMedia
+                          sx={{ opacity: 0.3 }}
+                          component="img"
+                          height="150"
+                          src={post}
+                          alt="Publicación"
+
+                        />
+                        <CardContent>
+                          <Typography gutterBottom variant="h5" component="div">
+                            Nueva publicación
+                          </Typography>
+                          <Typography variant="body2" color="text.secondary">
+                            APRETÁ PARA AÑADIR
+                          </Typography>
+                        </CardContent>
+                      </CardActionArea>
                     </Linkk>
                   </Card>
 
-                  <Card sx={{maxWidth: 400, height: 250}}>
+                  <Card sx={{ maxWidth: 400, height: 250 }}>
                     <CardActionArea>
                       <CardMedia
-                        sx={{opacity: 0.3}}
+                        sx={{ opacity: 0.3 }}
                         component="img"
                         height="150"
                         src={calendar}
@@ -214,10 +214,10 @@ function DashboardContent() {
                       </CardContent>
                     </CardActionArea>
                   </Card>
-                  <Card sx={{maxWidth: 600, height: 250}}>
+                  <Card sx={{ maxWidth: 600, height: 250 }}>
                     <CardActionArea>
                       <CardMedia
-                        sx={{opacity: 0.3}}
+                        sx={{ opacity: 0.3 }}
                         component="img"
                         height="150"
                         src={user}
@@ -237,9 +237,9 @@ function DashboardContent() {
 
               </Grid>
             </Grid>
-            <Copyright sx={{ pt: 4 }} />
           </Container>
-        <Outlet/>
+          <Outlet />
+          <Copyright sx={{ pt: 4 }} />
         </Box>
       </Box>
     </ThemeProvider>

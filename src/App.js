@@ -13,6 +13,9 @@ import AllPublicaciones from './Components/Publicaciones/AllPublicaciones'
 import AllDates from './Components/AllDates'
 import Login from './Components/Login'
 import NuevaPublicacion from './Pages/NuevaPublicacion.js'
+import AllPublications from './Admin/AllPublications.js'
+import { UserForm as Users } from './Admin/Users.js'
+
 // Bootstrap CSS
 import "bootstrap/dist/css/bootstrap.min.css";
 // Bootstrap Bundle JS
@@ -35,10 +38,11 @@ function App() {
 
 
       <Route path="/Private" element={<Private />}>
+        <Route path="Publicaciones" element={<AllPublications />} ></Route>
         <Route path="NuevaPublicacion" element={<NuevaPublicacion />} ></Route>
         <Route path="EditarPublicacion"></Route>
         <Route path="EditarCalendario"></Route>
-        <Route path="EditarUsuarios"></Route>
+        <Route path="EditarUsuarios" element={<Users />}></Route>
       </Route>
 
     </Routes>

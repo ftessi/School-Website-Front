@@ -7,7 +7,6 @@ useEffect(() => {
 }, []);
 
 
-
     const [descripcion, setDescripcion] = useState("");
     const [titulo, setTitulo] = useState("");
 

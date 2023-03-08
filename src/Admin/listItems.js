@@ -10,31 +10,38 @@ import { Link } from 'react-router-dom'
 
 export const mainListItems = (
   <React.Fragment>
-    <ListItemButton>
-      <ListItemIcon>
-        <DashboardIcon />
-      </ListItemIcon>
-      <ListItemText primary="Inicio" />
-    </ListItemButton>
-    
-    <ListItemButton>
-      <ListItemIcon>
-        <PostAddIcon />
-      </ListItemIcon>
-      <ListItemText primary="Publicaciones" />
-    </ListItemButton>
-    
-    <ListItemButton>
-      <ListItemIcon>
-        <PeopleIcon />
-      </ListItemIcon>
-      <ListItemText primary="Usuarios"/>
-    </ListItemButton>
+    <Link to="">
+      <ListItemButton>
+        <ListItemIcon>
+          <DashboardIcon />
+        </ListItemIcon>
+        <ListItemText primary="Inicio" />
+      </ListItemButton>
+    </Link>
+
+    <Link to="Publicaciones">
+      <ListItemButton>
+        <ListItemIcon>
+          <PostAddIcon />
+        </ListItemIcon>
+        <ListItemText primary="Publicaciones" />
+      </ListItemButton>
+    </Link>
+
+    <Link to="EditarUsuarios">
+      <ListItemButton>
+        <ListItemIcon>
+          <PeopleIcon />
+        </ListItemIcon>
+        <ListItemText primary="Usuarios" />
+      </ListItemButton>
+    </Link>
+
     <ListItemButton>
       <ListItemIcon>
         <CalendarMonthIcon />
       </ListItemIcon>
       <ListItemText primary="Calendario" />
     </ListItemButton>
-    </React.Fragment>
+  </React.Fragment>
 )
